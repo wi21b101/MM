@@ -14,4 +14,9 @@ public class MMController {
         @RequestParam double a){
         return monitor.set(a);
     }
+
+    @RequestMapping("/status")
+    public String status(){
+        return monitor.status();
+    }
 }
